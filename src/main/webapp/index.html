@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="indexApp">
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="author" content="jacob"/>
+    <meta name="version" content="0.0.1.0"/>
+
+    <title>ms</title>
+
+    <!-- bootstrap need jquery -->
+    <script type="text/javascript" src="/jquery/jquery.min.js"></script>
+
+    <!-- bootstrap include -->
+    <script type="text/javascript" language="JavaScript" src="/bootstrap/bootstrap.min.js"></script>
+    <link type="text/css" rel="stylesheet" href="/bootstrap/bootstrap.min.css"/>
+
+    <!-- angularjs include -->
+    <script type="text/javascript" src="/angularjs/angular.min.js"></script>
+
+    <!-- internal:angular app -->
+    <script type="text/javascript" language="JavaScript" src="/app/indexApp.js"></script>
+
+    <!-- internal:angular controller -->
+    <script type="text/javascript" language="JavaScript" src="/controller/indexCtrl.js"></script>
+</head>
+<body ng-controller="indexCtrl">
+    <div ng-init="name='hello'">
+        <input type="text" ng-model="name" />
+        your name: {{name}}
+    </div>
+</body>
+</html>
