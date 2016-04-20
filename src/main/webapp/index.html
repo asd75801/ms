@@ -18,16 +18,26 @@
     <!-- angularjs include -->
     <script type="text/javascript" src="/angularjs/angular.min.js"></script>
 
+    <!-- kindeditor -->
+    <script type="text/javascript" src="/kindeditor/kindeditor-all-min.js"></script>
+    <script type="text/javascript" src="/kindeditor/lang/zh-CN.js"></script>
+
     <!-- internal:angular app -->
     <script type="text/javascript" language="JavaScript" src="/app/indexApp.js"></script>
 
     <!-- internal:angular controller -->
     <script type="text/javascript" language="JavaScript" src="/controller/indexCtrl.js"></script>
+
 </head>
 <body ng-controller="indexCtrl">
     <div ng-init="name='hello'">
         <input type="text" ng-model="name" />
         your name: {{name}}
+    </div>
+
+    <div>
+        <textarea name="content" style="width: 800px;height: 300px; visibility: hidden;">
+        </textarea>
     </div>
 </body>
 </html>
