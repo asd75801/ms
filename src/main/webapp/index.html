@@ -19,8 +19,11 @@
     <script type="text/javascript" src="/angularjs/angular.min.js"></script>
 
     <!-- kindeditor -->
-    <script type="text/javascript" src="/kindeditor/kindeditor-all-min.js"></script>
-    <script type="text/javascript" src="/kindeditor/lang/zh-CN.js"></script>
+    <!--<script type="text/javascript" src="/kindeditor/kindeditor-all-min.js"></script>-->
+    <!--<script type="text/javascript" src="/kindeditor/lang/zh-CN.js"></script>-->
+
+    <!-- echarts -->
+    <script type="text/javascript" src="/echarts/echarts.min.js"></script>
 
     <!-- internal:angular app -->
     <script type="text/javascript" language="JavaScript" src="/app/indexApp.js"></script>
@@ -30,14 +33,16 @@
 
 </head>
 <body ng-controller="indexCtrl">
-    <div ng-init="name='hello'">
-        <input type="text" ng-model="name" />
-        your name: {{name}}
-    </div>
+    <!--<div ng-init="name='hello'">-->
+        <!--<input type="text" ng-model="name" />-->
+        <!--your name: {{name}}-->
+    <!--</div>-->
 
-    <div>
-        <textarea name="content" style="width: 800px;height: 300px; visibility: hidden;">
-        </textarea>
-    </div>
+    <!--<div>-->
+        <!--<textarea name="content" style="width: 800px;height: 300px; visibility: hidden;">-->
+        <!--</textarea>-->
+    <!--</div>-->
+
+    <div id="main" style="width: 600px;height:400px;"></div>
 </body>
 </html>

@@ -3,7 +3,8 @@
  * @version 0.0.1.0
  * */
 app.controller('indexCtrl',function($scope){
-    var editor;
+
+/*    var editor;
     KindEditor.ready(function(K) {
         editor = K.create('textarea[name="content"]', {
             allowFileManager : true
@@ -36,4 +37,26 @@ app.controller('indexCtrl',function($scope){
             editor.html('');
         });
     });
+    */
+
+    var myChart = echarts.init(document.getElementById('main'));
+    var option = {
+        title: {
+            text: 'ECharts 入门示例'
+        },
+        tooltip: {},
+        legend: {
+            data:['销量']
+        },
+        xAxis: {
+            data: ["衬衫","羊毛衫","雪纺衫","裤子","高跟鞋","袜子"]
+        },
+        yAxis: {},
+        series: [{
+            name: '销量',
+            type: 'bar',
+            data: [5, 20, 36, 10, 10, 20]
+        }]
+    };
+    myChart.setOption(option);
 });
