@@ -39,6 +39,7 @@ app.controller('indexCtrl',function($scope){
     });
     */
 
+    /*
     var myChart = echarts.init(document.getElementById('main'));
     var option = {
         title: {
@@ -59,4 +60,8 @@ app.controller('indexCtrl',function($scope){
         }]
     };
     myChart.setOption(option);
+
+    */
+
+    $('#datetimepicker').datetimepicker();
 });
