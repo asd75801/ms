@@ -156,7 +156,7 @@ function contextMenu (data, index){
         var x = d3.event.clientX + document.body.scrollLeft + document.documentElement.scrollLeft;
         var y = d3.event.clientY + document.body.scrollTop + document.documentElement.scrollTop;
     }
-    
+
     d3.select(view)
         .style('position', 'absolute')
         .style('left', x + "px")
