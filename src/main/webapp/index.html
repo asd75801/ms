@@ -8,20 +8,22 @@
 
     <!-- ##########css import########## -->
     <link type="text/css" rel="stylesheet" href="/bootstrap/bootstrap.min.css"/>
-    <link type="text/css" rel="stylesheet" href="/datetimepicker/css/bootstrap-datetimepicker.min.css" />
+    <link type="text/css" rel="stylesheet" href="/datetimepicker/css/bootstrap-datetimepicker.min.css"/>
+    <link type="text/css" rel="stylesheet" href="/clockpicker/bootstrap-clockpicker.min.css"/>
+    <!--<link type="text/css" rel="stylesheet" href="/clockpicker/jquery-clockpicker.min.css"/>-->
     <link type="text/css" rel="stylesheet" href="/d3tree/d3tree.css"/>
 </head>
 <body ng-controller="indexCtrl">
     <!-- angularjs hello -->
     <div ng-init="name='hello'">
-        <input type="text" ng-model="name" />
+        <input type="text" ng-model="name"/>
         your name: {{name}}
     </div>
     <br><br><br><br>
     <!-- kind editor demo -->
     <div>
-        <textarea name="content" style="width: 800px;height: 300px; visibility: hidden;">
-        </textarea>
+            <textarea name="content" style="width: 800px;height: 300px; visibility: hidden;">
+            </textarea>
     </div>
     <br><br><br><br>
     <!-- echarts demo -->
@@ -30,6 +32,12 @@
     <!-- datetimepicker demo -->
     <div>
         <input type="text" id="datetimepicker" data-date-format="yyyy-mm-dd hh:ii:ss">
+    </div>
+    <br><br><br><br>
+    <!-- clockpicker demo -->
+    <div class="col-md-2" data-placement="left" data-align="top" data-autoclose="true" role="form">
+        <input class="form-control" id="single-input" value="" placeholder="Now">
+        <button type="button" id="check-minutes">Check the minutes</button>
     </div>
     <br><br><br><br>
     <!-- d3 tree demo -->
@@ -50,6 +58,9 @@
     <script type="text/javascript" src="/kindeditor/lang/zh-CN.js"></script>
     <!-- echarts -->
     <script type="text/javascript" src="/echarts/echarts.min.js"></script>
+    <!-- bootstrap clockpicker -->
+    <script type="text/javascript" src="/clockpicker/bootstrap-clockpicker.min.js"></script>
+    <!--<script type="text/javascript" src="/clockpicker/jquery-clockpicker.min.js"></script>-->
     <!-- bootstrap datetimepicker -->
     <script type="text/javascript" src="/datetimepicker/js/bootstrap-datetimepicker.min.js"></script>
     <script type="text/javascript" src="/datetimepicker/js/locales/bootstrap-datetimepicker.zh-CN.js"></script>

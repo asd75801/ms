@@ -205,6 +205,22 @@ app.controller('indexCtrl', function ($scope) {
     //datetimepicker 学习
     $('#datetimepicker').datetimepicker();
 
+    //clockpicker 学习
+    //http://weareoutman.github.io/clockpicker/
+    var input = $('#single-input').clockpicker({
+        placement: 'bottom',
+        align: 'left',
+        autoclose: true,
+        'default': 'now'
+    });
+
+    // Manually toggle to the minutes view
+    $('#check-minutes').click(function (e) {
+        // Have to stop propagation here
+        e.stopPropagation();
+        input.clockpicker('show')
+            .clockpicker('toggleView', 'minutes');
+    });
 
     //d3 tree 学习
     //https://segmentfault.com/a/1190000000422344
