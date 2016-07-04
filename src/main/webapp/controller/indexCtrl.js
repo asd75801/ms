@@ -3,6 +3,8 @@
  * @version 0.0.1.0
  * */
 app.controller('indexCtrl',function($scope){
+
+    //kind editor 学习
     var editor;
     KindEditor.ready(function(K) {
         editor = K.create('textarea[name="content"]', {
@@ -37,6 +39,8 @@ app.controller('indexCtrl',function($scope){
         });
     });
 
+    //echarts 学习
+    //http://echarts.baidu.com/echarts2/doc/example.html
     var myChart = echarts.init(document.getElementById('main'));
     // var option = {
     //     title: {
@@ -198,6 +202,213 @@ app.controller('indexCtrl',function($scope){
     myChart.setOption(option);
 
 
-
+    //datetimepicker 学习
     $('#datetimepicker').datetimepicker();
+
+
+    //d3 tree 学习
+    //https://segmentfault.com/a/1190000000422344
+    var treeData = [
+        {
+            "name": "Top Level",
+            "parent": "null",
+            "value": 10,
+            "type": "black",
+            "level": "red",
+            "cat": "suit",
+            "children": [
+                {
+                    "name": "Level 2: A",
+                    "parent": "Top Level",
+                    "value": 15,
+                    "type": "grey",
+                    "level": "red",
+                    "cat": "suit",
+                    "children": [
+                        {
+                            "name": "Son of A",
+                            "parent": "Level 2: A",
+                            "value": 5,
+                            "type": "steelblue",
+                            "cat": "licensing",
+                            "level": "orange"
+                        },
+                        {
+                            "name": "Daughter of A",
+                            "parent": "Level 2: A",
+                            "value": 8,
+                            "type": "steelblue",
+                            "cat": "licensing",
+                            "level": "red"
+                        }
+                    ]
+                },
+                {
+                    "name": "Level 2: A",
+                    "parent": "Top Level",
+                    "value": 15,
+                    "type": "grey",
+                    "level": "red",
+                    "cat": "suit",
+                    "children": [
+                        {
+                            "name": "Son of A",
+                            "parent": "Level 2: A",
+                            "value": 5,
+                            "type": "steelblue",
+                            "cat": "licensing",
+                            "level": "orange"
+                        },
+                        {
+                            "name": "Daughter of A",
+                            "parent": "Level 2: A",
+                            "value": 8,
+                            "type": "steelblue",
+                            "cat": "licensing",
+                            "level": "red"
+                        }
+                    ]
+                },
+                {
+                    "name": "Level 2: A",
+                    "parent": "Top Level",
+                    "value": 15,
+                    "type": "grey",
+                    "level": "red",
+                    "cat": "suit",
+                    "children": [
+                        {
+                            "name": "Son of A",
+                            "parent": "Level 2: A",
+                            "value": 5,
+                            "type": "steelblue",
+                            "cat": "licensing",
+                            "level": "orange"
+                        },
+                        {
+                            "name": "Daughter of A",
+                            "parent": "Level 2: A",
+                            "value": 8,
+                            "type": "steelblue",
+                            "cat": "licensing",
+                            "level": "red"
+                        },
+                        {
+                            "name": "Level 2: A",
+                            "parent": "Top Level",
+                            "value": 15,
+                            "type": "grey",
+                            "level": "red",
+                            "cat": "suit",
+                            "children": [
+                                {
+                                    "name": "Son of A",
+                                    "parent": "Level 2: A",
+                                    "value": 5,
+                                    "type": "steelblue",
+                                    "cat": "licensing",
+                                    "level": "purpole"
+                                },
+                                {
+                                    "name": "Daughter of A",
+                                    "parent": "Level 2: A",
+                                    "value": 8,
+                                    "type": "steelblue",
+                                    "cat": "licensing",
+                                    "level": "red"
+                                },
+                                {
+                                    "name": "Level 2: A",
+                                    "parent": "Top Level",
+                                    "value": 15,
+                                    "type": "cyan",
+                                    "level": "orange",
+                                    "cat": "suit",
+                                    "children": [
+                                        {
+                                            "name": "Son of A",
+                                            "parent": "Level 2: A",
+                                            "value": 5,
+                                            "type": "steelblue",
+                                            "cat": "licensing",
+                                            "level": "cyan"
+                                        },
+                                        {
+                                            "name": "Daughter of A",
+                                            "parent": "Level 2: A",
+                                            "value": 8,
+                                            "type": "steelblue",
+                                            "cat": "licensing",
+                                            "level": "red"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "Level 2: A",
+                    "parent": "Top Level",
+                    "value": 15,
+                    "type": "grey",
+                    "level": "blue",
+                    "cat": "suit",
+                    "children": [
+                        {
+                            "name": "Son of A",
+                            "parent": "Level 2: A",
+                            "value": 5,
+                            "type": "steelblue",
+                            "cat": "licensing",
+                            "level": "yellow"
+                        },
+                        {
+                            "name": "Daughter of A",
+                            "parent": "Level 2: A",
+                            "value": 8,
+                            "type": "steelblue",
+                            "cat": "licensing",
+                            "level": "green"
+                        }
+                    ]
+                },
+                {
+                    "name": "Level 2: A",
+                    "parent": "Top Level",
+                    "value": 15,
+                    "type": "green",
+                    "level": "green",
+                    "cat": "suit",
+                    "children": [
+                        {
+                            "name": "Son of A",
+                            "parent": "Level 2: A",
+                            "value": 5,
+                            "type": "steelblue",
+                            "cat": "licensing",
+                            "level": "green"
+                        },
+                        {
+                            "name": "Daughter of A",
+                            "parent": "Level 2: A",
+                            "value": 8,
+                            "type": "grey",
+                            "cat": "licensing",
+                            "level": "blue"
+                        }
+                    ]
+                },
+                {
+                    "name": "Level 2: B",
+                    "parent": "Top Level",
+                    "value": 10,
+                    "type": "grey",
+                    "cat": "resolved",
+                    "level": "cyan"
+                }
+            ]
+        }
+    ];
+    d3tree(treeData,'#myMenu1');
 });

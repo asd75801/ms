@@ -2,55 +2,63 @@
 <html lang="en" ng-app="indexApp">
 <head>
     <meta charset="UTF-8">
-
     <meta name="author" content="jacob"/>
     <meta name="version" content="0.0.1.0"/>
-
     <title>ms</title>
 
-    <!-- bootstrap need jquery -->
-    <script type="text/javascript" src="/jquery/jquery.min.js"></script>
-
-    <!-- bootstrap include -->
-    <script type="text/javascript" language="JavaScript" src="/bootstrap/bootstrap.min.js"></script>
+    <!-- ##########css import########## -->
     <link type="text/css" rel="stylesheet" href="/bootstrap/bootstrap.min.css"/>
-
-    <!-- angularjs include -->
-    <script type="text/javascript" src="/angularjs/angular.min.js"></script>
-
-    <!-- kindeditor -->
-    <script type="text/javascript" src="/kindeditor/kindeditor-all-min.js"></script>
-    <script type="text/javascript" src="/kindeditor/lang/zh-CN.js"></script>
-
-    <!-- echarts -->
-    <script type="text/javascript" src="/echarts/echarts.min.js"></script>
-
-    <!-- bootstrap datetimepicker -->
-    <script type="text/javascript" src="/datetimepicker/js/bootstrap-datetimepicker.min.js"></script>
-    <script type="text/javascript" src="/datetimepicker/js/locales/bootstrap-datetimepicker.zh-CN.js"></script>
     <link type="text/css" rel="stylesheet" href="/datetimepicker/css/bootstrap-datetimepicker.min.css" />
-
-    <!-- internal:angular app -->
-    <script type="text/javascript" language="JavaScript" src="/app/indexApp.js"></script>
-
-    <!-- internal:angular controller -->
-    <script type="text/javascript" language="JavaScript" src="/controller/indexCtrl.js"></script>
-
+    <link type="text/css" rel="stylesheet" href="/d3tree/d3tree.css"/>
 </head>
 <body ng-controller="indexCtrl">
-
+    <!-- angularjs hello -->
     <div ng-init="name='hello'">
         <input type="text" ng-model="name" />
         your name: {{name}}
     </div>
-
+    <br><br><br><br>
+    <!-- kind editor demo -->
     <div>
         <textarea name="content" style="width: 800px;height: 300px; visibility: hidden;">
         </textarea>
     </div>
-
+    <br><br><br><br>
+    <!-- echarts demo -->
     <div id="main" style="width: 600px;height:400px;"></div>
+    <br><br><br><br>
+    <!-- datetimepicker demo -->
+    <div>
+        <input type="text" id="datetimepicker" data-date-format="yyyy-mm-dd hh:ii:ss">
+    </div>
+    <br><br><br><br>
+    <!-- d3 tree demo -->
+    <div id="myMenu1" style="margin:0; padding:0; background: #eeeeee; width: 150px; display: none;"></div>
 
-    <input type="text" id="datetimepicker" data-date-format="yyyy-mm-dd hh:ii:ss">
+
+
+
+    <!-- ##########js import########## -->
+    <!-- bootstrap need jquery -->
+    <script type="text/javascript" src="/jquery/jquery.min.js"></script>
+    <!-- bootstrap include -->
+    <script type="text/javascript" language="JavaScript" src="/bootstrap/bootstrap.min.js"></script>
+    <!-- angularjs include -->
+    <script type="text/javascript" src="/angularjs/angular.min.js"></script>
+    <!-- kindeditor -->
+    <script type="text/javascript" src="/kindeditor/kindeditor-all-min.js"></script>
+    <script type="text/javascript" src="/kindeditor/lang/zh-CN.js"></script>
+    <!-- echarts -->
+    <script type="text/javascript" src="/echarts/echarts.min.js"></script>
+    <!-- bootstrap datetimepicker -->
+    <script type="text/javascript" src="/datetimepicker/js/bootstrap-datetimepicker.min.js"></script>
+    <script type="text/javascript" src="/datetimepicker/js/locales/bootstrap-datetimepicker.zh-CN.js"></script>
+    <!-- d3 tree -->
+    <script src="/d3tree/d3.v3.min.js"></script>
+    <script src="/d3tree/d3tree.js"></script>
+    <!-- internal:angular app -->
+    <script type="text/javascript" language="JavaScript" src="/app/indexApp.js"></script>
+    <!-- internal:angular controller -->
+    <script type="text/javascript" language="JavaScript" src="/controller/indexCtrl.js"></script>
 </body>
 </html>
